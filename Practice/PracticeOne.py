@@ -1,3 +1,4 @@
+import random
 # User inputs and Prints
 # num1 = input('Enter a number ')
 # num2 = input('Enter a number ')
@@ -8,28 +9,28 @@
 # Lists
 people = ["bob", "Karen", "travis"]
 
-print(people[1])
+# print(people[1])
 people.reverse()
-print(people)
+# print(people)
 twodlist = [
   [1, 2],
   [3, 4]
 ]
-print(twodlist[0][1])
+# print(twodlist[0][1])
  
 # dictionary
 bob = { 
   'test': 3,
   'test2': 2
 }
-print(bob['test2'])
+# print(bob['test2'])
 
 
 # function
 def test(number):
   print('test: ' + str(number))
 
-test(2)
+# test(2)
 
 # Classes
 class Student:
@@ -47,5 +48,11 @@ class Student:
 
 alex = Student('alex', 'IT', 4.0)
 
-print(alex.major)
-print(alex.on_honor_roll())
+# print(alex.major)
+# print(alex.on_honor_roll())
+
+
+def roll_dice(sides):
+  rand = random.randrange(1, sides)
+  return rand
+print('Roll Dice: ', roll_dice(20))
